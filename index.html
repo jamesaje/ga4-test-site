@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My GA4 Test Site</title>
+  <!-- GA4 Tracking Code -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <h1>Welcome to My GA4 Learning Website</h1>
+  <p>Click the button below to trigger a GA4 custom event.</p>
+  <button onclick="gtag('event', 'button_click', {'event_category': 'engagement'});">
+    Click Me
+  </button>
+</body>
+</html>
